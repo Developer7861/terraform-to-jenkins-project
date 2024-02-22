@@ -8,7 +8,7 @@ resource "aws_instance" "one" {
   ami = "ami-02ca28e7c7b8f8be1"
   instance_type = "t2.micro"
   availability_zone = "us-east-2a"
-  vpc_security_group_ids = [aws_security_group.terraform-sg.id]
+  vpc_security_group_ids = [aws_security_group.swiggy-sg.id]
   user_data = <<EOF
 #!/bin/bash
 sudo yum update -y
@@ -29,7 +29,7 @@ resource "aws_instance" "two" {
   ami = "ami-02ca28e7c7b8f8be1"
   instance_type = "t2.micro"
   availability_zone = "us-east-2b"
-  vpc_security_group_ids = [aws_security_group.terraform-sg.id]
+  vpc_security_group_ids = [aws_security_group.swiggy-sg.id]
   user_data = <<EOF
 #!/bin/bash
 sudo yum update -y
