@@ -1,5 +1,5 @@
 resource "aws_security_group" "swiggy-sg" {
-  name = "terraform-alb-sg"
+  name = "terraform-jenkins-alb-sg"
    ingress {
     from_port   = 22
     to_port     = 22
