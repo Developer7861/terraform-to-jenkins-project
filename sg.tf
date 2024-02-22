@@ -1,5 +1,5 @@
 resource "aws_security_group" "terraform-sg" {
-  name = "alb-sg"
+  name = "terraform-alb-sg"
    ingress {
     from_port   = 22
     to_port     = 22
