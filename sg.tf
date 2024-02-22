@@ -1,4 +1,4 @@
-resource "aws_security_group" "terraform-sg" {
+resource "aws_security_group" "swiggy-sg" {
   name = "terraform-alb-sg"
    ingress {
     from_port   = 22
